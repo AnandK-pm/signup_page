@@ -1,0 +1,175 @@
+@font-face {
+    font-family:"norse";
+    src: url('norse-bold-webfont.woff');
+}
+html,body
+{
+    margin: 0;
+    padding: 0;
+    font-family:"norse";
+}
+.main
+{
+    display: flex;
+}
+.img-container
+{
+    width:520px;
+    height:100%;
+    margin-left: 0;
+    overflow: hidden;
+    margin-top: 0;
+    position: relative;
+}
+.bgimg
+{
+    height:auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+.logo-container
+{
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 10px;
+    font-size: 3rem;
+    color:white;
+    height:150px;
+    width:520px;
+    top:40%;
+    left:0;
+    display: flex;
+    gap:26px;
+    position: absolute; 
+    justify-content: center;
+    align-items: center;
+}
+.logo
+{
+    height:100%;
+}
+.credit
+{
+    font-family: monospace;
+    font-size: 1rem;
+    font-weight: 900;
+    position:absolute;
+    left: 0;
+    bottom:0;
+    color: white;
+}
+.right
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #F4F5F6;
+}
+.up
+{
+    box-sizing: border-box;
+    background-color: #F4F5F6;
+    padding:4.4rem;
+    width:95%;
+    height:200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:25px;
+}
+.middle
+{
+    font-family: Arial, Helvetica, sans-serif;
+    padding:25px;
+    background-color: white;
+}
+fieldset
+{
+    padding:3rem;
+    border: none;
+}
+.allrows
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.row
+{
+    display: flex;
+    gap:70px;
+    font-size: 0.9rem;
+}
+.row div
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+legend
+{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+label
+{
+    font-size: 0.8rem;
+    font-weight: 700;
+    font-family:monospace;
+}
+
+.create
+{
+    margin-top: 30px;
+    position: relative;
+}
+.create_btn
+{
+    color: white;
+    text-align: center;
+    padding:10px;
+    font-size: 1rem;
+    font-weight: 700;
+    height:50px;
+    width:200px;
+    position: absolute;
+    left:50px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+    background-color: cadetblue;
+    cursor: pointer;
+}
+.create_btn:hover
+{
+    background-color: #5D8B98;
+}
+.down
+{
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding:3rem;
+    margin-left: 2rem;
+}
+input
+{
+    height:20px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #D2D6DA;
+    padding: 5px;
+}
+input:user-invalid
+{
+    border: 1px solid red;
+}
+input:focus-visible {
+    border: 1px solid black;
+    outline: 0;
+}
+input:valid
+{
+    border: 1px solid #5D8B98;
+
+}

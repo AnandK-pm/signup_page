@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form</title>
+    <link rel ="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="img-container">
+                <img src ="bg_img.jpg" class="bgimg">
+                <div class="logo-container">
+                    <img src ="odin-lined.png" class="logo">
+                    <div> THE ODIN PROJECT</div>
+                </div>  
+                <div class="credit">Photo by maximalfocus</div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="up">
+                <div class="text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.
+                <br><br><b>You know you want to...</b></div>
+            </div>
+            <div class="middle">
+                <form>
+                    <fieldset>
+                        <legend>Join The Odin Project</legend>
+                        <div class="allrows">
+                            <div class="row">
+                                <div>
+                                    <label for="fname">FIRST NAME</label>
+                                    <input type="text" id="fname" required>
+                                </div>
+                                <div>
+                                    <label for="lname">LAST NAME</label>
+                                    <input type = "text" id="lname" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <label for="email">EMAIL</label>
+                                    <input type="email" id="email" required>
+                                </div>
+                                <div>
+                                    <label for="tele">PHONE NUMBER</label>
+                                    <input type = "tele" id="tele" required minlength="10" maxlength="10">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <label for="pword">PASSWORD</label>
+                                    <input type="password" id="pword" title="Minimum eight characters, at least one letter and one number" required patttern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                                    >
+                                </div>
+                                <div>
+                                    <label for="confirm_pword">CONFIRM PASSWORD</label>
+                                    <input type = "password" id="confirm_pword" title="Minimum eight characters, at least one letter and one number"
+
+                                    required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="create">
+                        <button type = "submit" class="create_btn">Create Account</button>
+                    </div>
+                </form>
+            </div>
+            <div class="down">
+                <p>Already have an acount ?<a href="index.html"> Log In</a></p>
+            </div>
+            
+        </div>
+</body>
+</html>
